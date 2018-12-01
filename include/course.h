@@ -7,36 +7,24 @@
 
 class Course {
 protected:
-  int size;
   std::string number;
   std::string name;
   int creditHours;
 
 public:
+  //default
+  Course(): number("none"), name("none"), creditHours(0) {}
 
+  //using constructor to set the course values
+  Course(std::string num, std::string n,int ch): number(num), name(n), creditHours(ch){}
+
+  //overloaded << operator
   friend std::ostream &operator<<(std::ostream &out, const Course &c) {
-    out << std::setw(8) << c.number << " - " << c.name << ": (" << c.creditHours << ")";
+    out << std::setw(8) << c.number << " - " << c.name << ": (" << c.creditHours << ")" << std::endl;
     return out;
   }
 
-  //Setters
-  void setSize(int s) {
-    this->size = s;
-  }
-  void setCourseNumber(std::string cnum) {
-    this->number = cnum;
-  }
-  void setCourseName(std::string cn) {
-    this->name = cn;
-  }
-  void setCreditHours(int ch) {
-    this->creditHours = ch;
-  }
-
   //Getters
-  int getSize() {
-    return size;
-  }
   std::string getCourseNumber() const{
     return number;
   }
