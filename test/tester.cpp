@@ -1,5 +1,4 @@
 #define CATCH_CONFIG_MAIN
-#include <iostream>
 #include <sstream>
 #include "catch.hpp"
 #include "graph.h"
@@ -98,7 +97,7 @@ TEST_CASE("Testing graph with course class") {
 
 
   SECTION( "Printing the different versions of the graphs, and"
-           "finally erasing the graph now that we are done with it"){
+           "finally erasing the graph now that we are done with it "){
     std::cout << " ";
     g->printTopologicalOrder();
     std::cout << " ";

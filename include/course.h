@@ -25,15 +25,9 @@ public:
   }
 
   //Getters
-  std::string getCourseNumber() const{
-    return number;
-  }
-  std::string getCourseName() const{
-    return name;
-  }
-  int getCreditHours() const{
-    return creditHours;
-  }
+  std::string getCourseNumber() const{ return number; }
+  std::string getCourseName() const{ return name; }
+  int getCreditHours() const{ return creditHours; }
 
 };
 

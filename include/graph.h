@@ -15,6 +15,7 @@ public:
   bool empty() const { return size == 0; }
 
   T* getVertices() { return vertices; }
+
   LinkedList<int>* getAdjList() { return adjList; }
 
   void clear(){

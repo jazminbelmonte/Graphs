@@ -52,8 +52,6 @@ void createGraph(Graph<Course>* &g) {
   g->getAdjList()[2].insertFirst(5); //CS 2420
   g->getAdjList()[2].insertFirst(6); //CS 2450
   g->getAdjList()[2].insertFirst(9); //CS 2810
-
-
 }
 
 int main(){
